@@ -66,7 +66,7 @@ Security fixes are only backported to the latest tagged release. If you run a fo
 
 ### Out of Scope
 
-- Third-party services we integrate with (Helius, Jupiter, Pump.fun, Streamflow, Birdeye, DexScreener, OpenRouter, Anthropic, AssemblyAI, ElevenLabs, Cloudflare, Vercel, Fly.io, Neon, Supabase). Report those to their respective vendors.
+- Third-party services we integrate with (Helius, Jupiter, Streamflow, Birdeye, DexScreener, OpenRouter, Anthropic, AssemblyAI, ElevenLabs, Cloudflare, Vercel, Fly.io, Neon, Supabase). Report those to their respective vendors.
 - Vulnerabilities in npm dependencies we do not vendor or ship compiled. File upstream; we monitor `npm audit` and Dependabot.
 - Social-engineering, phishing, SIM-swap, or physical attacks targeting users or maintainers.
 - DoS via overwhelming Solana RPC quotas or rate-limits on third-party APIs.

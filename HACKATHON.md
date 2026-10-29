@@ -206,6 +206,6 @@ OpenClawd — Building sovereign AI agents on Solana.
 
 - GitHub: github.com/x402agent/solana-clawd  
 - Ecosystem: solanaclawd.com  
-- Token: $CLAWD on pump.fun  
+- Token: $CLAWD on Solana  
 
 **No Keys. No KYC. Just Crypto.**

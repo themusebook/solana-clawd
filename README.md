@@ -15,7 +15,7 @@
 [![SDK Graph](https://img.shields.io/badge/SDK%20Graph-x402.wtf%2Fsdk-06B6D4?style=for-the-badge)](https://x402.wtf/sdk)
 [![Terminal](https://img.shields.io/badge/Web%20Terminal-solanaclawd.com%2Fterminal-14F195?style=for-the-badge)](https://solanaclawd.com/terminal)
 [![Backrooms](https://img.shields.io/badge/backrooms.x402.wtf-INFINITE-FFD700?style=for-the-badge)](https://backrooms.x402.wtf)
-[![Token](https://img.shields.io/badge/%24CLAWD-8cHzQHUS2s2h8TzCmfqPKYiM4dSt4roa3n7MyRLApump-9945FF?style=for-the-badge)](https://pump.fun)
+[![Token](https://img.shields.io/badge/%24CLAWD-8cHzQHUS2s2h8TzCmfqPKYiM4dSt4roa3n7MyRLApump-9945FF?style=for-the-badge)](https://solscan.io/token/8cHzQHUS2s2h8TzCmfqPKYiM4dSt4roa3n7MyRLApump)
 [![Colosseum](https://img.shields.io/badge/Colosseum-Hackathon%20Submission-14F195?style=for-the-badge)](https://arena.colosseum.org/projects/explore/solana-clawd)
 [![Judge Guide](https://img.shields.io/badge/Judge%20Guide-hackathon%2FREADME.md-FFD166?style=for-the-badge)](./hackathon/README.md)
 [![Dark DeFi](https://img.shields.io/badge/🌑%20Dark%20DeFi-Zcash%20Privacy%20Layer-1a1a2e?style=for-the-badge)](./dark-defi/)
@@ -1024,7 +1024,7 @@ Public mirror source groups:
 | --- | --- | --- |
 | Agent interface | `.claude`, `.github`, `adk`, `agent-kit`, `agents`, `mcp`, `skills` | Track source and examples only; local Claude settings stay ignored |
 | Gateway + governance | `gateway`, `x402`, `attestation`, `formal_verification`, `docs`, `examples` | Track public code, proofs, manifests, and templates |
-| Solana execution | `amm`, `perps`, `programs`, `pump-fun`, `pinocchio`, `llm_oracle`, `vulcan-cli-master` | Track source and examples; never commit keys or live `.env` files |
+| Solana execution | `amm`, `perps`, `programs`, `pinocchio`, `llm_oracle`, `vulcan-cli-master` | Track source and examples; never commit keys or live `.env` files |
 | Apps + operators | `apps`, `tui`, `chrome-extension`, `operator`, `clawd-cloud-os`, `tailclawd` | Track app source; `tui/.env`, `tui/dist`, and `tui/node_modules` stay local-only |
 | Automation + memory | `automaton-main`, `leviathan`, `MemeBRain`, `moltbook-agent`, `ooda`, `deep-clawd`, `data` | Track source/config templates; private data dumps stay local-only |
 | SDK + packages | `packages`, `sdk`, `clawdcli`, `clawdrouter`, `openShell`, `email-worker`, `scripts` | Track reusable package source and automation |
@@ -1133,7 +1133,7 @@ PORT=3001 solana-clawd-mcp-http     # Streamable HTTP + SSE
 | `x402` | 9 | Payment protocol + p-token metered billing |
 | `leviathan` | 9 | OODA loop + autonomous agent control |
 | `market` | 5 | Composite intelligence (premium) |
-| `pump` | 8 | Pump.fun bonding curve |
+| `pump` | 8 | Launchpad bonding-curve tools |
 | `memory` | 4 | Persistent agent memory + autoDream |
 | `agents` | 6 | Agent fleet + skill management |
 | `deep-clawd` | 6 | DeepSeek trading agent tools |
