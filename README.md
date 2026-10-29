@@ -985,12 +985,12 @@ const health = await runtime.getRuntimeHealth();
 
 ## Public Gitlawb Mirrors
 
-The sanitized public mirrors are tracked from this GitHub repo as gitlinks/submodules, not as expanded private workspaces:
+The sanitized public mirrors live on Gitlawb and are no longer tracked here as submodules (the `gitlawb://` URLs broke `git clone --recurse-submodules` on GitHub). Clone them directly:
 
 | Mirror | Purpose | Public safety rule |
 | --- | --- | --- |
-| [`my-project-public`](./my-project-public) | Stable public mirror for judge/reviewer cloning | Sanitized source only; no local secrets, wallets, live env, UCAN material, or dependency folders |
-| [`my-project-public-fresh`](./my-project-public-fresh) | Fresh rebuild mirror used to verify the public export path | Same sanitizer rules as `my-project-public`; used as a second-pass safety check |
+| `my-project-public` | Stable public mirror for judge/reviewer cloning | Sanitized source only; no local secrets, wallets, live env, UCAN material, or dependency folders |
+| `my-project-public-fresh` | Fresh rebuild mirror used to verify the public export path | Same sanitizer rules as `my-project-public`; used as a second-pass safety check |
 
 Force the public node before clone so `git-remote-gitlawb` does not fall back to a local node:
 
