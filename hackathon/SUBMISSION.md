@@ -48,7 +48,7 @@ Solana Clawd brings those workflows into one stack:
 | Attestation | [../attestation](../attestation) |
 | Gateway | [../gateway](../gateway) |
 | LLM oracle | [../llm_oracle](../llm_oracle) |
-| x402/payments | [../x402](../x402), [../pay](../pay), [../a2a-x402-main](../a2a-x402-main) |
+| x402/payments | [../x402](../x402), [../pay](../pay), [../vendor/a2a-x402-main](../vendor/a2a-x402-main) |
 
 ## Judge Commands
 

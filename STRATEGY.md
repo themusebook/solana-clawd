@@ -15,7 +15,7 @@ Scope: Solana meme spot, Hyperliquid perps, Aster perps
 
 $CLAWD trades three distinct venues with one shared risk engine:
 
-- **Solana spot momentum** for Pump.fun and post-graduation meme tokens
+- **Solana spot momentum** for launchpad and post-graduation meme tokens
 - **Hyperliquid perpetuals** for liquid directional expression and funding dislocations
 - **Aster perpetuals** for Solana-native perp exposure when on-chain settlement and shared wallet context matter
 
@@ -35,7 +35,7 @@ The OODA loop is the core operating model for all $CLAWD finance agents. It maps
 
 1. **Observe**
    Gather price, volume, liquidity, volatility, funding, OI, social velocity, holder concentration, dev-wallet behavior, and venue-specific execution constraints.
-   Sources: Helius (`src/helius/`), Jupiter, Pump.fun (`src/pump/`), on-chain listeners.
+   Sources: Helius (`src/helius/`), Jupiter, launchpad (`src/pump/`), on-chain listeners.
 
 2. **Orient**
    Score the setup across trend, momentum, liquidity, participation, and execution.
@@ -85,7 +85,7 @@ Execution risk is subtractive. A trade can fail despite strong momentum if liqui
 
 ## Venue 1: Solana Meme Spot
 
-This venue covers Pump.fun launches, post-graduation Raydium flow, and liquid Solana meme rotations. Powered by the Scanner and OODA agents.
+This venue covers launchpad launches, post-graduation Raydium flow, and liquid Solana meme rotations. Powered by the Scanner and OODA agents.
 
 ### Intent
 
@@ -129,7 +129,7 @@ LONG fires only when all are true:
 5. 24h volume and liquidity exceed minimums
 6. Estimated execution slippage is inside cap
 
-### Pump.fun Early Launch Overlay
+### Launchpad Early Launch Overlay
 
 For very early meme tokens the system applies a separate overlay:
 
@@ -142,7 +142,7 @@ For very early meme tokens the system applies a separate overlay:
   - dev-wallet behavior is not hostile
   - launch quality passes basic holder distribution checks
 
-This overlay exists because pre-graduation Pump.fun microstructure does not behave like post-graduation spot.
+This overlay exists because pre-graduation launchpad microstructure does not behave like post-graduation spot.
 
 ### Spot Exits
 
@@ -284,7 +284,7 @@ The signal stack is similar to Hyperliquid, but sizing is slightly smaller and p
 
 | Drawdown | Action |
 | --- | --- |
-| `5%` | Reduce weakest exposure and block high-risk Pump.fun entries |
+| `5%` | Reduce weakest exposure and block high-risk launchpad entries |
 | `8%` | Close all perp positions and revert to spot-only or flat mode |
 | `12%` | Full halt on new risk until manual or automated review clears it |
 
@@ -374,7 +374,7 @@ Overfitting protection:
 | `src/engine/risk-engine.ts` | Enforces drawdown cascade, kill switch, position limits |
 | `src/engine/permission-engine.ts` | Deny-first gating on execution actions |
 | `src/helius/` | Solana market data, account resolution, priority fees |
-| `src/pump/` | Pump.fun launch discovery, bonding curve analysis |
+| `src/pump/` | launchpad launch discovery, bonding curve analysis |
 | `web/wiki` | OODA context memory (KNOWN/LEARNED/INFERRED tiers) |
 | `web/vault` | Clawd Vault for source documents and compiled research |
 | `STRATEGY.md` | This file — single source of truth for trading parameters |
@@ -382,7 +382,7 @@ Overfitting protection:
 ## Operational Notes
 
 - Spot meme tokens are allowed to be noisy; perps are not
-- Pump.fun setups must survive stricter distribution and execution checks
+- launchpad setups must survive stricter distribution and execution checks
 - Hyperliquid is the default venue for clean long/short expression
 - Aster is the Solana-native execution layer when treasury and wallet alignment matter
 - The wiki memory tier system feeds directly into OODA Orient phase
@@ -402,6 +402,6 @@ Overfitting protection:
 
 - Reframed from single meme setup into venue-aware system
 - Added separate parameter profiles for Solana spot, Hyperliquid perps, and Aster perps
-- Added Pump.fun pre-graduation sizing and exit rules
+- Added launchpad pre-graduation sizing and exit rules
 - Added unified confidence scoring and drawdown cascade
 - Added professional optimizer bounds and anti-overfitting rules

@@ -277,8 +277,8 @@ DarkDefi is a multi-package repository. The source packages are the source of tr
 | `@conway/automaton-cli@0.1.0` | `automaton-main/packages/cli/` | Workspace CLI package | `automaton-cli` | Source package in the automaton workspace; not currently packed as a standalone tarball. |
 | `@openclawdsolana/clawd-tui@0.2.2` | `clawd-tui/` | Public npm CLI | `clawd`, `clawd-tui` | Publish candidate: `artifacts/packages/openclawdsolana-clawd-tui-0.2.2.tgz`. |
 | `mpl-corenft-staking@0.1.0` | `mpl-corenft-staking/` | Anchor/Solana program | Program id `7AFH2R2vAowRbYxLJnS5eRazZxQyHcMD9VTJKEFsjpdZ` | Devnet deployed; no mainnet deploy attempted. |
-| `@solana/mpp@0.2.0` | `mpp/solana-mpp-0.2.0.tgz` | Reference npm artifact | Tarball only | Tracked upstream/reference payment package artifact. |
-| `@solana/mpp@0.5.0` | `mpp/solana-mpp-0.5.0.tgz` | Reference npm artifact | Tarball only | Tracked upstream/reference payment package artifact. |
+| `@solana/mpp@0.2.0` | `npm i @solana/mpp@0.2.0` (tarball removed) | Reference npm artifact | Tarball only | Tracked upstream/reference payment package artifact. |
+| `@solana/mpp@0.5.0` | `npm i @solana/mpp@0.5.0` (tarball removed) | Reference npm artifact | Tarball only | Tracked upstream/reference payment package artifact. |
 
 ### Artifact Inventory
 
@@ -287,8 +287,8 @@ DarkDefi is a multi-package repository. The source packages are the source of tr
 | `artifacts/packages/darkralph-tui-1.0.0.tgz` | `@darkralph/tui@1.0.0` | Public npm candidate | Root Dark Ralph / DarkDefi TUI package. |
 | `artifacts/packages/openclawdsolana-clawd-tui-0.2.2.tgz` | `@openclawdsolana/clawd-tui@0.2.2` | Public npm candidate | Solana-aware Clawd terminal package. |
 | `artifacts/packages/conway-automaton-0.1.0.tgz` | `@conway/automaton@0.1.0` | Public npm candidate | Automaton runtime library and CLI. |
-| `mpp/solana-mpp-0.2.0.tgz` | `@solana/mpp@0.2.0` | Reference artifact | Earlier Solana payment package snapshot. |
-| `mpp/solana-mpp-0.5.0.tgz` | `@solana/mpp@0.5.0` | Reference artifact | Current Solana payment package snapshot used for interoperability review. |
+| `npm i @solana/mpp@0.2.0` (tarball removed) | `@solana/mpp@0.2.0` | Reference artifact | Earlier Solana payment package snapshot. |
+| `npm i @solana/mpp@0.5.0` (tarball removed) | `@solana/mpp@0.5.0` | Reference artifact | Current Solana payment package snapshot used for interoperability review. |
 
 `artifacts/`, generated `dist/` folders, dependency folders, private deployment folders, Cloudflare `.wrangler/` state, local config, and Solana deploy keypairs are ignored. Regenerate local outputs and attach only reviewed tarballs to public releases.
 

@@ -71,7 +71,7 @@ solana-clawd/
 │   ├── state/          # AppState store
 │   ├── memory/         # 3-tier memory extraction (KNOWN / LEARNED / INFERRED)
 │   ├── helius/         # Helius RPC client + WebSocket listener
-│   ├── pump/           # Pump.fun scanner
+│   ├── pump/           # Launchpad scanner
 │   ├── gateway/        # SSE transport
 │   ├── skills/         # Skill registry
 │   ├── metaplex/       # Metaplex agent minting

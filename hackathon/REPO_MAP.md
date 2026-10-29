@@ -29,7 +29,7 @@ This map covers the hackathon submission repository and the modules called out f
 | [../agent-tasks](../agent-tasks) | Task backlog and implementation plan files for agent-driven development. |
 | [../agent-kit](../agent-kit) | Solana Clawd-owned agent kit for loading catalogs, templates, runtime profiles, and registry documents. |
 | [../adk](../adk) | Google ADK entrypoint and agent metadata integration. |
-| [../a2a-x402-main](../a2a-x402-main) | A2A and x402 reference package/demo content for agent payment workflows. |
+| [../vendor/a2a-x402-main](../vendor/a2a-x402-main) | A2A and x402 reference package/demo content for agent payment workflows. |
 | [../ooda](../ooda) | Observe, Orient, Decide, Act loop logic and market/agent decision workflow. |
 | [../openclawd](../openclawd) | OpenClawd stack snapshot/submodule for sovereign AI agent runtime references. |
 | [../openShell](../openShell) | Shell/operator surface and runtime-facing scripts. |
@@ -70,7 +70,7 @@ mcp orchestrator + clawdrouter
     +--> agents + agent-kit + skills
     +--> ooda + deep-clawd + leviathan + automaton-main
     +--> perps + packages/clawd-perps + perps/clawd-agents-perps
-    +--> gateway + adk + a2a-x402-main + x402 + pay
+    +--> gateway + adk + vendor/a2a-x402-main + x402 + pay
     +--> attestation + formal_verification + programs + llm_oracle
 ```
 

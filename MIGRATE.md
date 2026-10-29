@@ -235,7 +235,7 @@ If you had companion/pet configurations in OpenClaw, they map to solana-clawd's 
 | `companion.level` | `BlockchainBuddy.level` |
 | `companion.xp` | `BlockchainBuddy.experience` |
 
-Available blockchain species: `soldog`, `bonk`, `wif`, `jupiter`, `raydium`, `whale`, `bull`, `bear`, `shark`, `octopus`, `degod`, `y00t`, `okaybear`, `pepe`, `pumpfun`, `sniper`, `validator`, `rpc`.
+Available blockchain species: `soldog`, `bonk`, `wif`, `jupiter`, `raydium`, `whale`, `bull`, `bear`, `shark`, `octopus`, `degod`, `y00t`, `okaybear`, `pepe`, `sniper`, `validator`, `rpc`.
 
 If the source companion type does not map to any blockchain species, the migrator defaults to `soldog` and preserves the original type name in a `migrationNote` field.
 

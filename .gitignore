@@ -128,3 +128,12 @@ x402/worker/
 openclawd-framework/multiagents-infinite-backroom/
 openclawd-framework/clawd-terminal/
 openclawd-framework/clawd-voice/
+
+# M0 scrub: never commit credentials or packed artifacts
+key.json
+**/key.json
+.keys
+**/.keys/
+*.tgz
+*keypair*.json
+!**/.env.example

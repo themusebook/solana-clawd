@@ -178,7 +178,7 @@ Inspect:
 - [../gateway/README.md](../gateway/README.md)
 - [../x402/README.md](../x402/README.md)
 - [../pay](../pay)
-- [../a2a-x402-main](../a2a-x402-main)
+- [../vendor/a2a-x402-main](../vendor/a2a-x402-main)
 
 Expected value: Solana Clawd has a path for agent registries, governed destinations, x402 commerce, and A2A payment-aware workflows.
 
