@@ -1,0 +1,31 @@
+solana-clawd
+Copyright (c) 2026 x402agent / The Musebook contributors
+Licensed under the MIT License (see LICENSE).
+
+This repository includes third-party code that remains under its original
+license. Those licenses apply to the listed paths, not the root MIT license.
+
+| Path | Upstream | License |
+| --- | --- | --- |
+| vendor/a2a-x402-main/ | google-agentic-commerce/a2a-x402 | Apache-2.0 |
+| llm-wiki-tang/ | llm-wiki (upstream project) | Apache-2.0 |
+| ore-master/ | regolith-labs/ore | Apache-2.0 (per Cargo.toml; no LICENSE file vendored) |
+| vulcan-cli-master/ | Ellipsis Labs, vulcan-cli | MIT, Copyright (c) 2026 Ellipsis Labs |
+| pinocchio/pinocchio-main/ | anza-xyz/pinocchio | Apache-2.0 |
+| llm_oracle/percolator-cli-master/ | percolator-cli | Apache-2.0 |
+| llm_oracle/upstream/percolator* (submodules) | aeyakovenko/percolator* | see upstream |
+| Perps/twamm-master/ | Solana Labs, twamm | Apache-2.0, Copyright 2023 Solana Labs, Inc. |
+| programs/mpl-token-metadata-main/ | metaplex-foundation/mpl-token-metadata | Metaplex(TM) NFT Open Source License v1.0 |
+| agents/skills/openclaw-claude-code-skill-main/, skills/openclaw-claude-code-skill-main/ | enderfga | MIT, Copyright (c) 2024 enderfga |
+| agents/skills/solana-dev-skill-main/, skills/solana-dev-skill-main/ | solana-dev-skill | MIT |
+| openclawd/, pay/, ultra/ (submodules) | see .gitmodules | see upstream |
+
+Vendored code with no license file in this tree (license unconfirmed):
+Perps/Solana-Market-Maker-master/, Perps/phoenix-onchain-market-maker-master/,
+Perps/solana-market-maker-volume-bot-master/, agents/solana-agent/moltworker-main/,
+agents/solana-agent/workspace/api-docs-master/, python/workspace/api-docs-master/,
+agents/solana-pumpfun-bot-master/, mcp/solana-mcp-official-main/.
+Upstream licenses for these must be confirmed before redistribution.
+
+Apache-2.0 components: any upstream NOTICE files inside those folders are
+retained and apply.
